@@ -1,0 +1,470 @@
+# Typos configuration for spell checking
+# See https://github.com/crate-ci/typos for more information
+
+[default]
+# Extend the default typos configuration
+extend-ignore-identifiers-re = [
+    # Technical terms and acronyms
+    "[Kk]ubernetes",
+    "[Dd]ocker[Cc]ompose",
+    "[Mm]kdocs",
+    "[Nn]ginx",
+    "[Rr]edis",
+    "[Pp]ostgre[Ss][Qq][Ll]",
+    "[Mm]y[Ss][Qq][Ll]",
+    "[Mm]aria[Dd][Bb]",
+    "[Gg]rafana",
+    "[Pp]rometheus",
+    "[Ee]lasticsearch",
+    "[Kk]ibana",
+    "[Ll]ogstash",
+    "[Ff]ilebeat",
+    "[Ff]luentd",
+    "[Tt]raefik",
+    "[Hh]elm",
+    "[Tt]erraform",
+    "[Aa]nsible",
+    "[Jj]enkins",
+    "[Gg]it[Ll]ab",
+    "[Gg]it[Hh]ub",
+    "[Aa]ws",
+    "[Gg]cp",
+    "[Aa]zure",
+    
+    # Programming languages and frameworks
+    "[Pp]ython",
+    "[Jj]ava[Ss]cript",
+    "[Tt]ype[Ss]cript",
+    "[Nn]ode[Jj]s",
+    "[Rr]eact[Jj]s",
+    "[Vv]ue[Jj]s",
+    "[Aa]ngular",
+    "[Gg]olang",
+    "[Rr]ust",
+    "[Kk]otlin",
+    "[Ss]wift",
+    "[Pp]hp",
+    "[Rr]uby",
+    
+    # File formats and protocols
+    "[Yy]aml",
+    "[Jj]son",
+    "[Xx]ml",
+    "[Hh]tml",
+    "[Cc]ss",
+    "[Ss]css",
+    "[Hh]ttp",
+    "[Hh]ttps",
+    "[Ff]tp",
+    "[Ss]ftp",
+    "[Ss]sh",
+    "[Tt]ls",
+    "[Ss]sl",
+    "[Jj]wt",
+    "[Oo]auth",
+    "[Ss]aml",
+    "[Ll]dap",
+    
+    # Common tech abbreviations
+    "[Aa]pi",
+    "[Rr]est",
+    "[Gg]raphql",
+    "[Cc]rud",
+    "[Cc]li",
+    "[Gg]ui",
+    "[Uu]i",
+    "[Uu]x",
+    "[Dd]b",
+    "[Oo]s",
+    "[Vv]m",
+    "[Cc]pu",
+    "[Rr]am",
+    "[Ss]sd",
+    "[Hh]dd",
+    "[Gg]pu",
+    "[Ll]an",
+    "[Ww]an",
+    "[Vv]pn",
+    "[Dd]ns",
+    "[Dd]hcp",
+    "[Nn]at",
+    "[Ll]b",
+    "[Cc]dn",
+    "[Ww]af",
+    "[Ii]ds",
+    "[Ii]ps",
+    
+    # Version control and CI/CD
+    "[Gg]it",
+    "[Ss]vn",
+    "[Mm]ercurial",
+    "[Cc]i",
+    "[Cc]d",
+    "[Dd]evops",
+    "[Mm]lops",
+    "[Gg]itops",
+    
+    # Cloud and infrastructure
+    "[Kk]8s",
+    "[Ee]ks",
+    "[Gg]ke",
+    "[Aa]ks",
+    "[Ee]cs",
+    "[Ee]c2",
+    "[Ss]3",
+    "[Rr]ds",
+    "[Vv]pc",
+    "[Ii]am",
+    "[Aa]rm",
+    "[Cc]loudformation",
+    "[Pp]ulumi",
+    
+    # Monitoring and observability
+    "[Aa]pm",
+    "[Ll]ogs",
+    "[Mm]etrics",
+    "[Tt]races",
+    "[Oo]tel",
+    "[Jj]aeger",
+    "[Zz]ipkin",
+    "[Dd]atadog",
+    "[Nn]ew[Rr]elic",
+    "[Ss]plunk",
+    
+    # Common brand names and tools
+    "[Gg]oogle",
+    "[Mm]icrosoft",
+    "[Aa]mazon",
+    "[Aa]pple",
+    "[Mm]eta",
+    "[Rr]edhat",
+    "[Cc]anonical",
+    "[Oo]racle",
+    "[Ii]bm",
+    "[Vv]mware",
+    "[Cc]isco",
+    "[Jj]uniper",
+    "[Ff]ortinet",
+    "[Pp]alo[Aa]lto",
+    
+    # File extensions
+    "\\.py",
+    "\\.js",
+    "\\.ts",
+    "\\.jsx",
+    "\\.tsx",
+    "\\.go",
+    "\\.rs",
+    "\\.java",
+    "\\.kt",
+    "\\.swift",
+    "\\.php",
+    "\\.rb",
+    "\\.yml",
+    "\\.yaml",
+    "\\.json",
+    "\\.xml",
+    "\\.html",
+    "\\.css",
+    "\\.scss",
+    "\\.sass",
+    "\\.md",
+    "\\.txt",
+    "\\.log",
+    "\\.conf",
+    "\\.cfg",
+    "\\.ini",
+    "\\.toml",
+    
+    # Common usernames and placeholders
+    "username",
+    "admin",
+    "user",
+    "passwd",
+    "localhost",
+    "example\\.com",
+    "test\\.com",
+    "placeholder",
+    "changeme",
+]
+
+[default.extend-words]
+# Additional words to ignore (case-insensitive)
+# MkDocs and documentation specific
+mkdocs = "mkdocs"
+pymdownx = "pymdownx"
+superfences = "superfences"
+arithmatex = "arithmatex"
+betterem = "betterem"
+inlinehilite = "inlinehilite"
+smartsymbols = "smartsymbols"
+tasklist = "tasklist"
+toc = "toc"
+admonition = "admonition"
+attr_list = "attr_list"
+def_list = "def_list"
+md_in_html = "md_in_html"
+tabbed = "tabbed"
+emoji = "emoji"
+twemoji = "twemoji"
+fontawesome = "fontawesome"
+mermaid = "mermaid"
+
+# Technical terms
+kubernetes = "kubernetes"
+dockerfile = "dockerfile"
+nginx = "nginx"
+redis = "redis"
+postgresql = "postgresql"
+mysql = "mysql"
+mariadb = "mariadb"
+grafana = "grafana"
+prometheus = "prometheus"
+elasticsearch = "elasticsearch"
+kibana = "kibana"
+logstash = "logstash"
+filebeat = "filebeat"
+fluentd = "fluentd"
+traefik = "traefik"
+istio = "istio"
+envoy = "envoy"
+calico = "calico"
+flannel = "flannel"
+cilium = "cilium"
+
+# Programming and tools
+javascript = "javascript"
+typescript = "typescript"
+nodejs = "nodejs"
+reactjs = "reactjs"
+vuejs = "vuejs"
+golang = "golang"
+rustlang = "rustlang"
+kubectl = "kubectl"
+helm = "helm"
+terraform = "terraform"
+ansible = "ansible"
+jenkins = "jenkins"
+gitlab = "gitlab"
+github = "github"
+
+# Cloud providers
+aws = "aws"
+gcp = "gcp"
+azure = "azure"
+
+# Protocols and formats
+http = "http"
+https = "https"
+json = "json"
+yaml = "yaml"
+toml = "toml"
+oauth = "oauth"
+saml = "saml"
+ldap = "ldap"
+jwt = "jwt"
+
+# Common abbreviations
+api = "api"
+rest = "rest"
+graphql = "graphql"
+crud = "crud"
+cli = "cli"
+gui = "gui"
+ui = "ui"
+ux = "ux"
+cicd = "cicd"
+devops = "devops"
+gitops = "gitops"
+
+[files]
+# Extend the file type checks
+extend-exclude = [
+    "*.log",
+    "*.min.js",
+    "*.min.css",
+    "node_modules/",
+    ".git/",
+    ".venv/",
+    "venv/",
+    "__pycache__/",
+    "site/",
+    ".mkdocs_cache/",
+    "*.pyc",
+    "*.pyo",
+    "*.egg-info/",
+    "dist/",
+    "build/",
+]
+
+[type.py]
+# Python-specific configuration
+extend-ignore-identifiers-re = [
+    # Python-specific terms
+    "__init__",
+    "__main__",
+    "__name__",
+    "__file__",
+    "__path__",
+    "__version__",
+    "__author__",
+    "__email__",
+    "__license__",
+    "__copyright__",
+    "__doc__",
+    "__dict__",
+    "__class__",
+    "__module__",
+    "__package__",
+    "__loader__",
+    "__spec__",
+    "__cached__",
+    "__builtins__",
+    "__all__",
+    "__enter__",
+    "__exit__",
+    "__iter__",
+    "__next__",
+    "__str__",
+    "__repr__",
+    "__len__",
+    "__getitem__",
+    "__setitem__",
+    "__delitem__",
+    "__contains__",
+    "__call__",
+    "__bool__",
+    "__int__",
+    "__float__",
+    "__complex__",
+    "__bytes__",
+    "__hash__",
+    "__eq__",
+    "__ne__",
+    "__lt__",
+    "__le__",
+    "__gt__",
+    "__ge__",
+    "__add__",
+    "__sub__",
+    "__mul__",
+    "__truediv__",
+    "__floordiv__",
+    "__mod__",
+    "__pow__",
+    "__and__",
+    "__or__",
+    "__xor__",
+    "__lshift__",
+    "__rshift__",
+    "__invert__",
+    "__neg__",
+    "__pos__",
+    "__abs__",
+    
+    # Common Python packages
+    "django",
+    "flask",
+    "fastapi",
+    "pytest",
+    "numpy",
+    "pandas",
+    "scipy",
+    "sklearn",
+    "tensorflow",
+    "pytorch",
+    "keras",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "bokeh",
+    "streamlit",
+    "jupyterlab",
+    "ipython",
+    "sqlalchemy",
+    "alembic",
+    "pydantic",
+    "celery",
+    "redis",
+    "psycopg2",
+    "pymongo",
+    "requests",
+    "httpx",
+    "aiohttp",
+    "uvicorn",
+    "gunicorn",
+    "wsgi",
+    "asgi",
+]
+
+[type.md]
+# Markdown-specific configuration
+extend-ignore-identifiers-re = [
+    # Markdown formatting
+    "\\*\\*.*\\*\\*",  # Bold text
+    "\\*.*\\*",       # Italic text
+    "`.*`",           # Inline code
+    "```[\\s\\S]*```", # Code blocks
+    "\\[.*\\]\\(.*\\)", # Links
+    "!\\[.*\\]\\(.*\\)", # Images
+]
+
+[type.yaml]
+# YAML-specific configuration
+extend-ignore-identifiers-re = [
+    # YAML keys and values
+    "apiVersion",
+    "metadata",
+    "namespace",
+    "labels",
+    "annotations",
+    "spec",
+    "containers",
+    "image",
+    "ports",
+    "env",
+    "volumeMounts",
+    "volumes",
+    "configMap",
+    "secret",
+    "deployment",
+    "service",
+    "ingress",
+    "configmap",
+    "persistentvolume",
+    "persistentvolumeclaim",
+    "storageclass",
+    "networkpolicy",
+    "podsecuritypolicy",
+    "clusterrole",
+    "clusterrolebinding",
+    "role",
+    "rolebinding",
+    "serviceaccount",
+]
+
+[type.json]
+# JSON-specific configuration
+extend-ignore-identifiers-re = [
+    # Common JSON keys
+    "\"name\"",
+    "\"version\"",
+    "\"description\"",
+    "\"author\"",
+    "\"license\"",
+    "\"repository\"",
+    "\"homepage\"",
+    "\"bugs\"",
+    "\"keywords\"",
+    "\"scripts\"",
+    "\"dependencies\"",
+    "\"devDependencies\"",
+    "\"peerDependencies\"",
+    "\"optionalDependencies\"",
+    "\"engines\"",
+    "\"os\"",
+    "\"cpu\"",
+    "\"private\"",
+    "\"publishConfig\"",
+    "\"workspaces\"",
+]
